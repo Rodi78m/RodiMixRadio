@@ -53,16 +53,16 @@ footer { position: fixed; bottom: 0; width: 100%; background: #8B4513; color: wh
 <script>
 let songs = {
   ku: [
-    { title: "Kurmancî", artist: "Ciwan Haco", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
+    { title: "Kurdish Playlist", artist: "Various", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" }
   ],
   ar: [
-    { title: "Ya Bint El Sultan", artist: "Adawiya", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
+    { title: "Arabic Playlist", artist: "Various", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" }
   ],
   en: [
-    { title: "Summer Vibe", artist: "Ahmad", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
+    { title: "English Playlist", artist: "Various", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
   ],
   de: [
-    { title: "German Folk Song", artist: "Hans", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
+    { title: "German Playlist", artist: "Various", src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" }
   ]
 };
 
