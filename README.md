@@ -1,46 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
 <title>Rodi Mix Radio</title>
 <style>
-body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f0e6d2; color:#333; text-align:center; }
-header { background:#8B4513; color:white; padding:20px; }
-.language-bar button { margin:5px; padding:10px 15px; border:none; border-radius:5px; background:#D2B48C; color:white; cursor:pointer; }
-iframe { width:100%; height:166px; border:none; margin-top:20px; border-radius:10px; }
+body {font-family:sans-serif;background:#eee;text-align:center;margin:0;padding:20px;}
+button{margin:5px;padding:10px;border:none;background:#8B4513;color:#fff;cursor:pointer;}
+iframe{width:100%;height:300px;border:none;margin-top:10px;}
 </style>
 </head>
 <body>
-<header>
-<h1>Rodi Mix Radio</h1>
-<div class="language-bar">
-<button onclick="switchLanguage('ar')">العربية</button>
-<button onclick="switchLanguage('ku')">كردي</button>
-<button onclick="switchLanguage('en')">English</button>
-<button onclick="switchLanguage('de')">Deutsch</button>
-</div>
-</header>
 
-<div id="player-container">
-<!-- مشغل SoundCloud سيظهر هنا -->
-</div>
+<h2>🎧 Rodi Mix Radio</h2>
+
+<button onclick="load('ar')">العربية</button>
+<button onclick="load('ku')">كردي</button>
+<button onclick="load('en')">English</button>
+<button onclick="load('de')">Deutsch</button>
+
+<div id="player-box"></div>
 
 <script>
-const players = {
-  ar: '<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/bn6s08cf6T1b5m3qGo&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>',
-  ku: '<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/WDg2lQsOymnwTrNsa2&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>',
-  en: '<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/4usXz4ARvJ0cTz3niJ&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>',
-  de: '<iframe scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/UmFzyC7QriTadJMUhp&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>'
+const links = {
+  ar:"https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/trackistador/sets/arabic-egyptian-oriental-music-free-to-use-creative-commons&auto_play=false",
+  ku:"https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/hedar-hussein/sets/kurdish-music&auto_play=false",
+  en:"https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/aamir-khan-53/sets/best-english-songs-2021&auto_play=false",
+  de:"https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/trackistador/sets/german-music-deutsche-musik-free-to-use-creative-commons&auto_play=false"
 };
 
-function switchLanguage(lang){
-  document.getElementById('player-container').innerHTML = players[lang];
+function load(lang){
+  document.getElementById('player-box').innerHTML =
+    `<iframe src="${links[lang]}" allow="autoplay"></iframe>`;
 }
-
-// التشغيل الافتراضي عند فتح الصفحة
-switchLanguage('ar');
 </script>
+
 </body>
 </html>
-
