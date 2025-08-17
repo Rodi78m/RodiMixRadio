@@ -53,16 +53,16 @@ footer { position: fixed; bottom: 0; width: 100%; background: #8B4513; color: wh
 <script>
 let songs = {
   ku: [
-    { title: "Kurdish Playlist", artist: "Various", src: "https://on.soundcloud.com/WDg2lQsOymnwTrNsa2" }
+    { title: "Kurmancî", artist: "Ciwan Haco", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
   ],
   ar: [
-    { title: "Arabic Playlist", artist: "Various", src: "https://on.soundcloud.com/bn6s08cf6T1b5m3qGo" }
+    { title: "Ya Bint El Sultan", artist: "Adawiya", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
   ],
   en: [
-    { title: "English Playlist", artist: "Various", src: "https://on.soundcloud.com/4usXz4ARvJ0cTz3niJ" }
+    { title: "Summer Vibe", artist: "Ahmad", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
   ],
   de: [
-    { title: "German Playlist", artist: "Various", src: "https://on.soundcloud.com/UmFzyC7QriTadJMUhp" }
+    { title: "German Folk Song", artist: "Hans", src: "https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3" }
   ]
 };
 
